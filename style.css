@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url(font/DMSans-VariableFont_opsz\,wght.ttf) format('truetype');
+}
+
+body {
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #131313;
+    color: #fff; 
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #131313;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-options {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-text {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#header-logo {
+    height: 25px;
+    z-index: 2;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+#nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
