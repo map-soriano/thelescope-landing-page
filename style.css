@@ -174,3 +174,40 @@ nav {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+#services {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10% 30% 10%;
+}
+
+#services ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+#services li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 300px;
+    border: #fff solid 1px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin:30px;
+    padding: 30px;
+}
+
+#services img {
+    height: 100px;
+    max-width: 100px;
+    align-self: center;
+    margin-bottom: 10px;
+}
