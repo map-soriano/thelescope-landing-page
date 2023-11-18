@@ -78,7 +78,10 @@ nav:hover {
 }
 
 .nav-text:hover {
-    color: #7584CB;
+    background: linear-gradient(90deg, #f29393, #044afe);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #header-logo {
