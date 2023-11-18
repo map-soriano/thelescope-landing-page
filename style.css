@@ -42,6 +42,10 @@ nav {
     font-weight: bold;
 }
 
+.nav-text:hover {
+    color: #7584CB;
+}
+
 #header-logo {
     height: 25px;
     z-index: 2;
