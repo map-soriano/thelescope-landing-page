@@ -4,6 +4,7 @@ body {
     background-color: black;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
+    font-weight: 4px;
     
 }
 
@@ -68,7 +69,7 @@ header {
 
 .nav-links li a:hover {
     transition: alt 0.3s ease 0s;
-    color: #F29393;
+    color: #9E88B8;
 }
 
 .container {
@@ -121,7 +122,7 @@ header {
 
 
 .btn-1:hover{
-    background: rgb(242, 147, 147);
+    background: #9E88B8;
     border: none;
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -129,7 +130,7 @@ header {
 }
 
 .btn-2:hover{
-    background: rgb(242, 147, 147);
+    background: #9E88B8;
     border: none;
     transform: scale(1.1);
     transition: transform 0.3s ease;
