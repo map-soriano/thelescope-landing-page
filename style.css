@@ -214,6 +214,7 @@ nav {
 #services li:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
+    background-color: #0D0D0D;
 }
 
 #services img {
