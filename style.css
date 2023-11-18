@@ -258,7 +258,7 @@ nav:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10% 30% 10%;
+    padding: 20px 10% 30% 10%;
 }
 
 #services ul {
@@ -389,7 +389,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10% 0 10%;
+    padding: 20px 10% 0 10%;
 }
 
 #reviews ul {
