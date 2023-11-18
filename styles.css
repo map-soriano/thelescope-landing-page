@@ -1,24 +1,21 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: black;
     box-sizing: border-box;
-    font-family: "DM Sans-Bold", Helvetica;;
     font-family: "DM Sans-Bold", Helvetica;
 }
-
 
 .section {
     color: white;
     padding: 40px;
     text-align: center;
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 
 header {
     position: fixed;
@@ -28,12 +25,15 @@ header {
     z-index: 1000;
 }
 
-
-#about, #services, #contact {
-    margin-top: 80px; 
+#about,
+#services,
+#contact {
+    margin-top: 80px;
 }
 
-li, a, button {
+li,
+a,
+button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -83,9 +83,8 @@ header {
     color: #ffffff;
     font-size: 120px;
     text-align: center;
-    margin: 0; 
+    margin: 0;
 }
-
 
 .container p {
     color: white;
@@ -146,8 +145,8 @@ header {
 
 .section .mission-vision-row {
     display: flex;
-    justify-content: center; 
-    gap: 60px; 
+    justify-content: center;
+    gap: 60px;
     flex-wrap: wrap;
     margin-top: 30px;
     text-align: left;
@@ -157,36 +156,35 @@ header {
 .section .vision-box {
     flex: 0 0 calc(48% - 10px);
     max-width: 500px;
-    padding: 60px; 
-    border: 2px solid white; 
+    padding: 60px;
+    border: 2px solid white;
     border-radius: 20px;
     box-sizing: border-box;
     margin-top: 0;
 }
 
-
 .section .head {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .section h2 {
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 .box-content {
     display: flex;
     align-items: center;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 .small-logo {
     max-width: 100%;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .mission-box h2,
 .vision-box h2 {
-    margin: 0; 
+    margin: 0;
 }
 
 .mission-box p,
@@ -194,15 +192,14 @@ header {
     font-size: 15px;
 }
 
-
-.head{
+.head {
     text-transform: uppercase;
-    color:#9E88B8;
+    color: #9E88B8;
 }
 
 .divider {
-    border: 1px solid #D5BEFF; 
-    margin: 20px auto; 
+    border: 1px solid #D5BEFF;
+    margin: 20px auto;
     width: 15%;
 }
 
@@ -222,7 +219,7 @@ header {
     box-sizing: border-box;
     margin-top: 20px;
     text-align: center;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .service-box .box-content {
@@ -243,7 +240,6 @@ header {
     margin: 0;
 }
 
-
 .contact-row {
     display: flex;
     justify-content: space-around;
@@ -252,7 +248,7 @@ header {
 
 .contact-box {
     display: flex;
-    width: 300px; 
+    width: 300px;
     align-items: center;
     justify-content: flex-start;
     flex: 0 0 calc(48% - 10px);
@@ -263,7 +259,7 @@ header {
 }
 
 .contact-logo {
-    max-width: 40px; /* Adjust the size of the logo */
+    max-width: 40px; 
     margin-right: 10px;
 }
 
@@ -272,5 +268,4 @@ header {
     color: white;
     margin: 0;
     line-height: 1.4;
-
 }
