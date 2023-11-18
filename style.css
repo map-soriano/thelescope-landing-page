@@ -123,7 +123,24 @@ nav:hover {
     align-items: center;
 }
 
-#home button {
+#lets-start-button {
+    background: linear-gradient(90deg, #f29393, #044afe);
+    color: #fff;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#inquire-button {
     background-color: #131313;
     color: #fff;
     width: 200px;
@@ -308,4 +325,14 @@ footer p {
     height: 0.5px;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #f29393, #044afe);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bg-gradient {
+    background: linear-gradient(90deg, #f29393, #044afe);
 }
