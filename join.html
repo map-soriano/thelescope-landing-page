@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Thelescope</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="Logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Join Us and Current Openings Section -->
+    <section class="section" id="join-us">
+        <h1>Join Us at Thelescope</h1>
+        <h2>Explore Opportunities, Ignite Your Career</h2>
+        <hr class="divider">
+        <p>At Thelescope, we believe in the power of talent, innovation, and collaboration. Join our team and become part of a dynamic community that's reshaping the future of secure record management. Discover exciting career opportunities that align with your skills and passions.</p>
+
+        <!-- Current Openings Section -->
+        <div class="services-row job-openings-row">
+            <div class="service-box job-opening">
+                <div class="box-content">
+                    <h3>Blockchain Developer</h3>
+                    <p>Play a key role in developing and enhancing our blockchain infrastructure. Experience in blockchain technologies and smart contracts is a plus.</p>
+                </div>
+            </div>
+            <div class="service-box job-opening">
+                <div class="box-content">
+                    <h3>UI/UX Designer</h3>
+                    <p>Bring our user interface to life. We're looking for creative minds with a passion for designing intuitive and visually appealing interfaces.</p>
+                </div>
+            </div>
+            <div class="service-box job-opening">
+                <div class="box-content">
+                    <h3>Data Security Analyst</h3>
+                    <p>Help us maintain the highest standards of data security. If you have a strong background in cybersecurity and data protection, we want to hear from you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

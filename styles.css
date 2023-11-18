@@ -380,3 +380,17 @@ header {
     height: 100%;
     object-fit: cover;
 }
+
+#join-us, p{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#join-us p,
+#current-openings p,
+.mission-box p {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px; 
+    padding: 10px;
+}
