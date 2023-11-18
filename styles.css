@@ -209,22 +209,20 @@ header {
 .services-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: space-around;
     gap: 20px;
     margin-top: 30px;
 }
 
 .service-box {
     flex: 0 0 calc(30% - 20px);
-    max-width: calc(30% - 20px); 
-    padding: 20px;
-    border: 2px solid white;
+    max-width: calc(30% - 20px);
+    border: 1px solid white;
     border-radius: 20px;
     box-sizing: border-box;
     margin-top: 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
     text-align: center;
+    overflow: hidden; 
 }
 
 .service-box .box-content {
