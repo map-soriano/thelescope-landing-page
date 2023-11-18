@@ -23,7 +23,6 @@ h3 {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 40px;
 }
 
 h4 {
@@ -265,4 +264,40 @@ nav {
     width: 50px;
     margin-top: -10px;
     margin-right: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #131313;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.separator {
+    border-bottom: #fff solid 1px;
+    width: 80%;
+    height: 0.5px;
+}
+
+.separator-short {
+    border-bottom: #9E88B8 solid 1px;
+    width: 15%;
+    height: 0.5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
