@@ -5,7 +5,6 @@
 
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -49,17 +48,22 @@ nav {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    background-color: #131313;
+    background-color: #0D0D0D;
     color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px;;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 20px 20%;
     box-sizing: border-box;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+    opacity: 0.6;
+    transition: transform 0.3s ease;
+}
+
+nav:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    opacity: 1;
 }
 
 .nav-options {
@@ -133,6 +137,7 @@ nav {
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 #home button:hover {
