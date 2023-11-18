@@ -230,8 +230,9 @@ nav:hover {
     justify-content: center;
     height: 200px;
     width: 300px;
-    border: #fff solid 1px;
-    border-radius: 10px;
+    border: transparent solid 1px;
+    border-image: linear-gradient(90deg, #f29393, #044afe);
+    border-image-slice: 1;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
