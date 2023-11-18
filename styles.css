@@ -1,9 +1,36 @@
-* {
-    box-sizing: border-box;
+body{
     margin: 0;
     padding: 0;
     background-color: black;
+    box-sizing: border-box;
+    font-family: "DM Sans-Bold", Helvetica;;
     font-family: "DM Sans-Bold", Helvetica;
+}
+
+
+.section {
+    color: white;
+    padding: 40px;
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+#about, #services, #contact {
+    margin-top: 80px; 
 }
 
 li, a, button {
@@ -49,14 +76,16 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 1100px;
 }
 
 .container h1 {
     color: #ffffff;
     font-size: 120px;
     text-align: center;
+    margin: 0; 
 }
+
 
 .container p {
     color: white;
