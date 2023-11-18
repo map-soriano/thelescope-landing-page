@@ -251,6 +251,11 @@ header {
     margin: 0;
 }
 
+.service-box:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+     box-shadow: 0 0 10px #9E88B8, 0 0 20px #9E88B8, 0 0 30px #9E88B8;
+}
 
 .contact-row {
     display: flex;
