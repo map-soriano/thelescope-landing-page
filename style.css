@@ -3,6 +3,11 @@
     src: url(font/DMSans-VariableFont_opsz\,wght.ttf) format('truetype');
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     padding-top: 20px;
     padding-left: 10%;
