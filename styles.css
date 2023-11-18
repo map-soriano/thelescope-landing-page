@@ -76,7 +76,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1100px;
+    height: 1000px;
 }
 
 .container h1 {
@@ -243,3 +243,34 @@ header {
     margin: 0;
 }
 
+
+.contact-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.contact-box {
+    display: flex;
+    width: 300px; 
+    align-items: center;
+    justify-content: flex-start;
+    flex: 0 0 calc(48% - 10px);
+    max-width: calc(48% - 10px);
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-logo {
+    max-width: 40px; /* Adjust the size of the logo */
+    margin-right: 10px;
+}
+
+.contact-box p {
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    line-height: 1.4;
+
+}
