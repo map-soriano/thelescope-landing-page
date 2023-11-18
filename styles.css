@@ -334,5 +334,49 @@ header {
     filter: blur(200px);
     pointer-events: none; 
 }
+.rating-summary {
+    font-size: 24px;
+    color: #988A43;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
 
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+}
 
+.review-card {
+    flex: 0 0 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
