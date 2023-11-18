@@ -116,15 +116,15 @@ header {
 
 .section .mission-vision-row {
     display: flex;
-    justify-content: center; /* Center the boxes horizontally */
-    gap: 60px; /* Add space between the boxes */
+    justify-content: center; 
+    gap: 60px; 
     flex-wrap: wrap;
     margin-top: 30px;
 }
 
 .section .mission-box,
 .section .vision-box {
-    flex: 0 0 calc(48% - 10px); /* Adjusted to leave space between boxes */
+    flex: 0 0 calc(48% - 10px); 
     max-width: 500px;
     padding: 20px;
     border: 1px solid #fff;
