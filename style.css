@@ -137,6 +137,8 @@ nav {
 }
 
 #home button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
     background-color: #7584CB;
     border: none;
 }
