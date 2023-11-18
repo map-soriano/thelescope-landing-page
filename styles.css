@@ -112,17 +112,22 @@ header {
     cursor: pointer;
 }
 
-.btn-1 {
-    background: rgb(242, 147, 147);
-    border-radius: 8px;
-    margin-right: 10px;
-}
-
-.btn-2 {
+.btn-1,.btn-2 {
     border: 2px solid white;
     border-radius: 8px;
     margin-left: 10px;
     background-color: transparent;
+}
+
+
+.btn-1:hover{
+    background: rgb(242, 147, 147);
+    border: none;
+}
+
+.btn-2:hover{
+    background: rgb(242, 147, 147);
+    border: none;
 }
 
 .section {
@@ -239,6 +244,8 @@ header {
     text-align: center;
     margin: 0;
 }
+
+
 
 .contact-row {
     display: flex;
