@@ -58,3 +58,53 @@ nav {
     padding: 0;
     margin: 0;
 }
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15% 10% 30% 10%;
+}
+
+#home h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    color: #504E5A; 
+    font-size: 25px;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 0;
+}
+
+#home div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#home button {
+    background-color: #131313;
+    color: #fff;
+    width: 200px;
+    border: #fff solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#home button:hover {
+    background-color: #7584CB;
+    border: none;
+}
