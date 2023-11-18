@@ -166,17 +166,20 @@ nav:hover {
 .about-mission-vision-format {
     border: #fff solid 1px;
     border-radius: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 50px 20px 50px 50px;
+    margin: auto 30px;
+    padding: 50px 30px;
+}
+
+.about-mission-vision-format img {
+    margin-right: 10px;
 }
 
 .about-mission-vision-format h3 {
     font-size: 30px;
     text-align: left;
     font-weight: 500;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .about-mission-vision-format p {
