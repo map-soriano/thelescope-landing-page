@@ -22,6 +22,14 @@
 </head>
 
 <body>
+    <div class="theme-nav">
+        <ul class="theme-list">
+            <li class="theme-options"><a href="../castro/index.html" class="theme-text">Castro</a></li>
+            <li class="theme-options"><a href="#home" class="theme-text">Dizon</a></li>
+            <li class="theme-options"><a class="theme-text" id="sarip">Sarip</li>
+            <li class="theme-options"><a href="../index.html" class="theme-text">Soriano</a></li>
+        </ul>
+    </div>
     <div>
         <div class="circle one"></div>
         <div class="circle two"></div>
@@ -195,6 +203,15 @@
             </div>
         </div>
     </footer>
+    <script>
+    const name = document.getElementById('sarip');
+    name.addEventListener('mouseover', function() {
+        name.innerHTML = 'Designer';
+    });
+    name.addEventListener('mouseout', function() {
+        name.innerHTML = 'Sarip';
+    });
+    </script>
 </body>
 
 </html>
