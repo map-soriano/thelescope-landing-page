@@ -21,6 +21,15 @@ body {
     -ms-user-select: none;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 h3 {
     font-size: 30px;
     text-align: center;
