@@ -163,6 +163,16 @@ nav:hover {
     margin-bottom: 10px;
 }
 
+#home h1 span {
+    margin: 0 -10px;
+    transition: font-size 1s ease;
+}
+
+#home h1 span:hover {
+    font-size: 120px;
+    transition: font-size 1s ease;
+}
+
 #home h2 {
     color: #504E5A; 
     font-size: 25px;
