@@ -157,30 +157,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-
-@media (max-width: 750px) {
-    .header {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-}
-
-@media (min-width: 751px) and (max-width: 999px) {
-    .header {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-}
-
-@media (min-width: 1000px) {
-    .header {
-        margin-left: 250px;
-        margin-right: 250px;
-    }
-}
-
-
-
 button {
     font-family: DM Sans;
     font-weight: 700;
@@ -387,4 +363,34 @@ hr {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 750px) {
+    .header {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .box {
+        width: 305px;
+        height: 300px;
+    }
+    .grid {
+        width: 170px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .header {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    .header {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
 }
