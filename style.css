@@ -192,6 +192,14 @@ nav:hover {
     transition: font-size 1s ease;
 }
 
+.blue-text:hover {
+    color: #7584CB;
+}
+
+.pink-text:hover {
+    color: #F29393;
+}
+
 #home h2 {
     color: #504E5A; 
     font-size: 25px;
@@ -606,7 +614,7 @@ footer p {
     position: absolute; 
     width: 100%; 
     height: 100%; 
-    background-color: #e9929780;;
+    background-color: #e9929780;
     border-radius: 219.5px/217px;
     filter: blur(200px);
     pointer-events: none; 
