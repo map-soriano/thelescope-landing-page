@@ -1,15 +1,21 @@
+html {
+    scroll-behavior: smooth;
+    animation: fade 0.8s ease-in-out;
+}
+
+.anchor {
+    display:block;
+    padding-top: 100px;
+    margin-top: -100px;
+ }
+
 body {
     background-color: rgb(19, 19, 19);
     color: white;
     font-family: DM Sans;
     margin-top: 100px;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
-}
-
-html {
-    /* scroll-behavior: smooth; */
-    animation: fade 0.8s ease-in-out;
 }
 
 @keyframes fade {
@@ -20,6 +26,11 @@ html {
     to {
         opacity: 1
     }
+}
+
+.page-break {
+    display: block;
+    height: 300px;
 }
 
 
@@ -35,7 +46,7 @@ html {
 
 .one {
     background: rgba(12, 119, 250, 0.50);
-    margin: -500px 994px 4316px 150px;
+    margin: -400px 994px 4316px 150px;
 }
 
 .two {
@@ -48,6 +59,25 @@ html {
     margin: 400px 130px 3648px -350px;
 }
 
+.four {
+    background: rgba(233, 146, 151, 0.50);
+    margin: 850px 100px 100px 1300px;
+}
+
+.five {
+    background: rgba(12, 119, 250, 0.50);
+    margin: 1250px 100px 3648px -350px;
+}
+
+.six {
+    background: rgba(233, 146, 151, 0.50);
+    margin: 2000px 100px 100px 1250px;
+}
+
+.seven {
+    background: rgba(12, 119, 250, 0.50);
+    margin: 2500px 100px 3648px -350px;
+}
 
 .header {
     display: flex;
@@ -126,30 +156,6 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
-@media (max-width: 750px) {
-    .header {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-}
-
-@media (min-width: 751px) and (max-width: 999px) {
-    .header {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-}
-
-@media (min-width: 1000px) {
-    .header {
-        margin-left: 250px;
-        margin-right: 250px;
-    }
-}
-
-
 
 button {
     font-family: DM Sans;
@@ -359,44 +365,32 @@ hr {
     -webkit-text-fill-color: transparent;
 }
 
-.theme-nav {
-    display: flex;
-    flex-direction: row;
-    width: 26%;
-    background-color: #0D0D0D;
-    color: #fff;
-    position: fixed;
-    opacity: 0.6;
-    transition: transform 0.3s ease;
-    top: 90%;
-    left: 37.5%;
-    border-radius: 50px;
+@media (max-width: 750px) {
+    .header {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .box {
+        width: 305px;
+        height: 300px;
+    }
+    .grid {
+        width: 170px;
+        height: 100px;
+    }
 }
 
-.theme-nav:hover {
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    transform: scale(1.1);
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 1;
+@media (min-width: 751px) and (max-width: 999px) {
+    .header {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
 }
 
-.theme-options {
-    display: inline-block;
-    padding: 0 25px 0 23px;
-}
-
-.theme-text {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: font-size 0.3s ease;
-}
-
-.theme-text:hover {
-    font-size: larger;
-    transition: font-size 0.3s ease;
-    background: linear-gradient(90deg, #f29393, #044afe);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@media (min-width: 1000px) {
+    .header {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
 }
