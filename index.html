@@ -21,6 +21,7 @@
             <ul class="theme-list">
                 <li class="theme-options"><a href="/castro/index.html" class="theme-text">Castro</a></li>
                 <li class="theme-options"><a href="/dizon/index.html" class="theme-text">Dizon</a></li>
+                <li class="theme-options"><a class="theme-text" id="sarip">Sarip</li>
                 <li class="theme-options"><a href="#home" class="theme-text">Soriano</a></li>
             </ul>
         </div>
@@ -167,6 +168,14 @@
         <script>
             document.addEventListener('contextmenu', function(e) {
                 e.preventDefault();
+            });
+
+            const name = document.getElementById('sarip');
+            name.addEventListener('mouseover', function() {
+                name.innerHTML = 'Zzzzz';
+            });
+            name.addEventListener('mouseout', function() {
+                name.innerHTML = 'Sarip';
             });
         </script>
     </body>
