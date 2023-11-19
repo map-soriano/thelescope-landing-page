@@ -427,3 +427,44 @@ header {
     box-shadow: 0 0 10px #9E88B8, 0 0 20px #9E88B8, 0 0 30px #9E88B8;
 }
 
+.theme-nav {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: #0D0D0D;
+    color: #fff;
+    position: fixed;
+    opacity: 0.6;
+    transition: transform 0.3s ease;
+    top: 90%;
+    left: 40%;
+    border-radius: 50px;
+}
+
+.theme-nav:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transform: scale(1.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.theme-options {
+    display: inline-block;
+    padding: 0 25px 0 23px;
+}
+
+.theme-text {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+}
+
+.theme-text:hover {
+    font-size: larger;
+    transition: font-size 0.3s ease;
+    background: linear-gradient(90deg, #f29393, #044afe);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
