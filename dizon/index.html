@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="w3-animate-opacity">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <title>Thelescope</title>
+
+    <!-- modify path for styles -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="theme-nav">
+        <ul class="theme-list">
+            <li class="theme-options"><a href="../castro/index.html" class="theme-text">Castro</a></li>
+            <li class="theme-options"><a href="#home" class="theme-text">Dizon</a></li>
+            <li class="theme-options"><a class="theme-text" id="sarip">Sarip</li>
+            <li class="theme-options"><a href="../index.html" class="theme-text">Soriano</a></li>
+        </ul>
+    </div>
+    <div>
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+        <!-- <div class="circle four"></div>
+        <div class="circle five"></div>
+        <div class="circle six"></div>
+        <div class="circle seven"></div> -->
+    </div>
+    <header class="header">
+        <div class="icon">
+            <div class="icon1">
+                <img class="logo1" src="img/logo1.png">
+            </div>
+            <div class="icon2">
+                <a href="index.html"><img class="logo2" src="img/logo2.png"></a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-button active">Home</a>
+            <a href="about.html" class="nav-button">About</a>
+            <a href="services.html" class="nav-button">Services</a>
+            <a href="contact.html" class="nav-button">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="rowflex">
+                <div class="spacer"></div>
+                <div class="content">
+                    <p class="name">Thelescope</p>
+                    <p class="gray">Thelescope is your trusted partner in secure audit logs, committed to elevating the
+                        security and transparency of your office environment.</p>
+                </div>
+                <div class="spacer"></div>
+            </div>
+            <div class="colflex">
+                <a href="about.html"><button class="button1">Start</button></a>
+                <a href="services.html"><button class="button2">Inquire</button></a>
+            </div>
+        </section>
+    </main>
+    <footer style="margin-top: 210px;">
+        <hr style="width: 1300px;">
+        <div class="colflex" style="justify-content: space-evenly;">
+            <div class="colflex" style="padding-right: 65px; text-wrap: nowrap;">
+                <p class="gray content">
+                    &ensp;&ensp;&ensp;© 2023 Thelescope. All rights reserved.
+                </p>
+                <p class="gray content">
+                    &ensp;&ensp;&ensp;Privacy Policy
+                </p>
+                <p class="gray content">
+                    &ensp;&ensp;&ensp;Terms of Service
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const name = document.getElementById('sarip');
+        name.addEventListener('mouseover', function() {
+            name.innerHTML = 'Zzzzz';
+        });
+        name.addEventListener('mouseout', function() {
+            name.innerHTML = 'Sarip';
+        });
+    </script>
+</body>
+
+</html>
