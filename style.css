@@ -637,7 +637,7 @@ footer p {
 .theme-nav {
     display: flex;
     flex-direction: row;
-    width: 25%;
+    width: 26%;
     background-color: #0D0D0D;
     color: #fff;
     position: fixed;
