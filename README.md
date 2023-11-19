@@ -13,7 +13,7 @@
 
 ## 🧠 Authors
 
--   👧 Danica L. Castro
--   👧 Lenina Jemima V. Dizon
--   👧 Alliyah Joyce M. Sarip
--   👦 Mark Aaron P. Soriano
+-   👩‍🎓 Danica L. Castro
+-   👩‍🎓 Lenina Jemima V. Dizon
+-   👩‍🎓 Alliyah Joyce M. Sarip
+-   👨‍🎓 Mark Aaron P. Soriano
