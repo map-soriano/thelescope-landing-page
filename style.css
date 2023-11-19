@@ -571,3 +571,43 @@ footer p {
     background: linear-gradient(90deg, #f29393, #044afe);
     border: none;
 }
+
+
+.box {
+    width: 439px;
+    height: 434px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none; 
+}
+
+.box .ellipse {
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #1077f780;
+    border-radius: 219.5px/217px;
+    filter: blur(200px);
+    pointer-events: none; 
+}
+
+.box-2{
+    width: 439px;
+    height: 434px;
+    position: fixed; 
+    margin-top: 500px;
+    top: 0;
+    right: 0;
+    pointer-events: none; 
+}
+
+.box-2 .ellipse {
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #e9929780;;
+    border-radius: 219.5px/217px;
+    filter: blur(200px);
+    pointer-events: none; 
+}
