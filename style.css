@@ -597,7 +597,8 @@ footer p {
     background-color: #1077f780;
     border-radius: 219.5px/217px;
     filter: blur(200px);
-    pointer-events: none; 
+    pointer-events: none;
+    animation: fadeInAndOut 10s linear infinite;
 }
 
 .box-2{
@@ -618,4 +619,17 @@ footer p {
     border-radius: 219.5px/217px;
     filter: blur(200px);
     pointer-events: none; 
+    animation: fadeInAndOut 10s linear infinite;
+    opacity: 0;
+    animation-delay: 4s;
 }
+
+@keyframes fadeInAndOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
