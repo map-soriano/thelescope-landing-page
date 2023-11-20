@@ -4,9 +4,11 @@
 
 ## 🔭 About
 
-This landing page was created as part of my Cloud Computing course at school. **Thelescope** is a prototype of a patient record management system with an integrated audit log that utilizes blockchain technology.
+**Thelescope** is a prototype of a patient record management system with an integrated audit log that utilizes blockchain technology. This landing page was created as part of my Cloud Computing course at school.
+
 The names at the bottom, as can be seen in the preview below, serve as the navigation menu for the different design interpretations that the other authors of this repository have made.
-The design showcased in the video is my interpretation or implementation of Sarip's design and can be accessed via the Soriano name in the navigation menu.
+
+The design showcased in the video is my interpretation or implementation of Sarip's design and can be accessed via the **Soriano** name in the navigation menu.
 
 
 
