@@ -56,19 +56,24 @@ h4 {
     margin-top: 0;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: fit-content;
+    border-radius: 30px;
     background-color: #0D0D0D;
     color: #fff;
-    padding: 20px 20%;
+    padding: 5px 2.5vw;
     box-sizing: border-box;
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1;
     opacity: 0.6;
     transition: transform 0.3s ease;
@@ -83,7 +88,7 @@ nav:hover {
 
 .nav-options {
     display: inline-block;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 .nav-text {
@@ -104,9 +109,8 @@ nav:hover {
 
 #header-logo {
     height: 25px;
+    margin-top: -8px;
     z-index: 2;
-    margin-right: auto;
-    margin-left: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -118,7 +122,7 @@ nav:hover {
 #nav-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-left: 25vw;
 }
 
 #sidenav {
@@ -281,6 +285,13 @@ nav:hover {
     border-radius: 10px;
     margin: auto 30px;
     padding: 50px 30px;
+    transition: all 0.3s ease;
+}
+
+.about-mission-vision-format:hover {
+    box-shadow: 0px 0px 10px 0px rgba(127,127,127,0.5);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
 .about-mission-vision-format img {
@@ -439,7 +450,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 10% 0 10%;
+    padding: 35px 10% 0 10%;
 }
 
 #reviews ul {
@@ -516,7 +527,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 10% 0 10%;
+    padding: 80px 10% 0 10%;
 }
 
 #careers ul {
