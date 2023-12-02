@@ -285,6 +285,13 @@ nav:hover {
     border-radius: 10px;
     margin: auto 30px;
     padding: 50px 30px;
+    transition: all 0.3s ease;
+}
+
+.about-mission-vision-format:hover {
+    box-shadow: 0px 0px 10px 0px rgba(127,127,127,0.5);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
 .about-mission-vision-format img {
