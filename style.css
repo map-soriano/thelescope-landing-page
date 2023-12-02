@@ -450,7 +450,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 10% 0 10%;
+    padding: 35px 10% 0 10%;
 }
 
 #reviews ul {
@@ -527,7 +527,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 10% 0 10%;
+    padding: 80px 10% 0 10%;
 }
 
 #careers ul {
