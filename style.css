@@ -353,8 +353,7 @@ nav:hover {
 }
 
 #services img {
-    height: 100px;
-    max-width: 100px;
+    height: 75px;
     align-self: center;
     margin-bottom: 10px;
 }
