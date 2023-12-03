@@ -166,15 +166,15 @@
                 <p>Terms of Service</p>
         </footer>
         <script>
-            document.addEventListener('contextmenu', function(e) {
+            document.addEventListener('contextmenu', (e) => {
                 e.preventDefault();
             });
 
             const name = document.getElementById('sarip');
-            name.addEventListener('mouseover', function() {
+            name.addEventListener('mouseover', () => {
                 name.innerHTML = 'Designer';
             });
-            name.addEventListener('mouseout', function() {
+            name.addEventListener('mouseout', () => {
                 name.innerHTML = 'Sarip';
             });
         </script>
