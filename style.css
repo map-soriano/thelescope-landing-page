@@ -401,12 +401,11 @@ nav:hover {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     background-color: #131313;
     color: #fff;
-    padding: 20px 10%;
 }
 
 footer p {
