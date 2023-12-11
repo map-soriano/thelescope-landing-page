@@ -3,6 +3,10 @@
     src: url(font/DMSans-VariableFont_opsz\,wght.ttf) format('truetype');
 }
 
+:root {
+    --main-gradient: linear-gradient(90deg, #f29393, #044afe);
+}
+
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -101,7 +105,7 @@ nav:hover {
 .nav-text:hover {
     font-size: larger;
     transition: font-size 0.3s ease;
-    background: linear-gradient(90deg, #f29393, #044afe);
+    background: var(--main-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -220,7 +224,7 @@ nav:hover {
 }
 
 #lets-start-button {
-    background: linear-gradient(90deg, #f29393, #044afe);
+    background: var(--main-gradient);
     color: #fff;
     width: 200px;
     border: none;
@@ -279,7 +283,7 @@ nav:hover {
 
 .about-mission-vision-format {
     border: transparent solid 1px;
-    border-image: linear-gradient(90deg, #f29393, #044afe);
+    border-image: var(--main-gradient);
     border-image-slice: 1;
     border-radius: 10px;
     margin: auto 30px;
@@ -335,7 +339,7 @@ nav:hover {
     height: 200px;
     width: 300px;
     border: transparent solid 1px;
-    border-image: linear-gradient(90deg, #f29393, #044afe);
+    border-image: var(--main-gradient);
     border-image-slice: 1;
     font-size: 20px;
     font-weight: bold;
@@ -428,13 +432,13 @@ footer p {
 }
 
 .text-gradient {
-    background: linear-gradient(90deg, #f29393, #044afe);
+    background: var(--main-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .bg-gradient {
-    background: linear-gradient(90deg, #f29393, #044afe);
+    background: var(--main-gradient);
 }
 
 #reviews {
@@ -459,7 +463,7 @@ footer p {
     height: 200px;
     width: 300px;
     border: transparent solid 1px;
-    border-image: linear-gradient(90deg, #f29393, #044afe);
+    border-image: var(--main-gradient);
     border-image-slice: 1;
     font-size: 40px;
     font-weight: bold;
@@ -511,7 +515,7 @@ footer p {
 #reviews-invite-text button:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    background: linear-gradient(90deg, #f29393, #044afe);
+    background: var(--main-gradient);
     border: none;
 }
 
@@ -537,7 +541,7 @@ footer p {
     height: 500px;
     width: 300px;
     border: transparent solid 1px;
-    border-image: linear-gradient(90deg, #f29393, #044afe);
+    border-image: var(--main-gradient);
     border-image-slice: 1;
     font-size: 40px;
     font-weight: bold;
@@ -582,7 +586,7 @@ footer p {
 #careers-invite-text button:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    background: linear-gradient(90deg, #f29393, #044afe);
+    background: var(--main-gradient);
     border: none;
 }
 
@@ -675,7 +679,7 @@ footer p {
 .theme-text:hover {
     font-size: larger;
     transition: font-size 0.3s ease;
-    background: linear-gradient(90deg, #f29393, #044afe);
+    background: var(--main-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
