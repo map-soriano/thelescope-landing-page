@@ -591,7 +591,8 @@ footer p {
 }
 
 
-.box {
+.box,
+.box-2 {
     width: 439px;
     height: 434px;
     position: fixed; 
@@ -611,14 +612,8 @@ footer p {
     animation: fadeInAndOut 10s linear infinite;
 }
 
-.box-2{
-    width: 439px;
-    height: 434px;
-    position: fixed; 
+.box-2{ 
     margin-top: 500px;
-    top: 0;
-    right: 0;
-    pointer-events: none; 
 }
 
 .box-2 .ellipse {
