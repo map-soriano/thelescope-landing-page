@@ -3,29 +3,6 @@
     src: url(font/DMSans-VariableFont_opsz\,wght.ttf) format('truetype');
 }
 
-:root {
-    --main-gradient: linear-gradient(90deg, #f29393, #044afe);
-}
-
-html {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-}
-
-body {
-    padding-top: 20px;
-    padding-left: 10%;
-    padding-right: 10%;
-    background-color: #131313;
-    color: #fff; 
-    font-family: 'DM Sans', sans-serif;
-    animation: fadeIn 2s ease-in-out;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -35,9 +12,42 @@ body {
     }
 }
 
+@keyframes fadeInAndOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}
+
+:root {
+    --main-bg: #131313;
+    --main-white: #fff;
+    --main-gradient: linear-gradient(90deg, #f29393, #044afe);
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 10%;
+    margin: 20px 0;
+    background-color: var(--main-bg);
+    color: var(--main-white); 
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 h3 {
     font-size: 30px;
-    text-align: center;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
@@ -46,7 +56,6 @@ h3 {
 h4 {
     color: #9E88B8;
     font-size: 20px;
-    text-align: center;
     font-weight: 400;
     text-transform: uppercase;
     margin-top: 0;
@@ -57,7 +66,6 @@ h4 {
 .section-p {
     font-size: 20px;
     font-weight: 500;
-    text-align: center;
     margin-top: 0;
 }
 
@@ -75,9 +83,10 @@ nav {
     width: fit-content;
     border-radius: 30px;
     background-color: #0D0D0D;
-    color: #fff;
+    color: var(--main-white);
     padding: 5px 2.5vw;
     position: fixed;
+    top: 2.5%;
     z-index: 1;
     opacity: 0.6;
     transition: transform 0.3s ease;
@@ -97,7 +106,7 @@ nav:hover {
 
 .nav-text {
     text-decoration: none;
-    color: #fff;
+    color: var(--main-white);
     font-weight: bold;
     transition: font-size 0.3s ease;
 }
@@ -133,7 +142,7 @@ nav:hover {
     position: fixed;
     top: 28%;
     left: 6%;
-    border: #fff solid 2px;
+    border: var(--main-white) solid 2px;
     border-radius: 20%;
     transition: transform 0.3s ease;
     padding: 20px;
@@ -150,7 +159,7 @@ nav:hover {
 #sidebar {
     border-radius: 20px;
     background-color: #0D0D0D;
-    color: #fff;
+    color: var(--main-white);
     position: fixed;
     top: 25%;
     left: 5%;
@@ -185,7 +194,6 @@ nav:hover {
 
 #home h1 {
     font-size: 100px;
-    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -210,7 +218,6 @@ nav:hover {
 #home h2 {
     color: #504E5A; 
     font-size: 25px;
-    text-align: center;
     padding-left: 20%;
     padding-right: 20%;
     margin-top: 0;
@@ -225,7 +232,7 @@ nav:hover {
 
 #lets-start-button {
     background: var(--main-gradient);
-    color: #fff;
+    color: var(--main-white);
     width: 200px;
     border: none;
     border-radius: 10px;
@@ -241,10 +248,10 @@ nav:hover {
 }
 
 #inquire-button {
-    background-color: #131313;
-    color: #fff;
+    background-color: var(--main-bg);
+    color: var(--main-white);
     width: 200px;
-    border: #fff solid 1px;
+    border: var(--main-white) solid 1px;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
@@ -343,7 +350,6 @@ nav:hover {
     border-image-slice: 1;
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
     margin:30px;
     padding: 30px;
     transition: all 0.3s ease;
@@ -373,7 +379,6 @@ nav:hover {
 #contact p {
     font-size: 20px;
     font-weight: 500;
-    text-align: center;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -408,17 +413,16 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    background-color: #131313;
-    color: #fff;
+    background-color: var(--main-bg);
+    color: var(--main-white);
 }
 
 footer p {
-    text-align: center;
     margin: 0 10px;
 }
 
 .separator {
-    border-bottom: #fff solid 1px;
+    border-bottom: var(--main-white) solid 1px;
     width: 80%;
     height: 0.5px;
 }
@@ -467,7 +471,6 @@ footer p {
     border-image-slice: 1;
     font-size: 40px;
     font-weight: bold;
-    text-align: center;
     margin:30px;
     padding: 30px;
     transition: all 0.3s ease;
@@ -484,7 +487,6 @@ footer p {
     font-size: 20px;
     font-weight: 500;
     font-style: italic;
-    text-align: center;
 }
 
 #reviews img {
@@ -545,7 +547,6 @@ footer p {
     border-image-slice: 1;
     font-size: 40px;
     font-weight: bold;
-    text-align: center;
     margin:30px;
     padding: 30px;
     transition: all 0.3s ease;
@@ -562,7 +563,6 @@ footer p {
     font-size: 20px;
     font-weight: 500;
     font-style: normal;
-    text-align: center;
 }
 
 #careers-invite-text {
@@ -591,70 +591,58 @@ footer p {
 }
 
 
-.box {
+.box,
+.box-2 {
     width: 439px;
     height: 434px;
     position: fixed; 
-    top: 0;
-    left: 0;
     pointer-events: none; 
 }
 
-.box .ellipse {
+.box {
+    top: 0;
+    left: 0;
+}
+
+.ellipse {
     position: absolute; 
     width: 100%; 
     height: 100%; 
-    background-color: #1077f780;
     border-radius: 219.5px/217px;
     filter: blur(200px);
     pointer-events: none;
     animation: fadeInAndOut 10s linear infinite;
 }
 
-.box-2{
-    width: 439px;
-    height: 434px;
-    position: fixed; 
-    margin-top: 500px;
-    top: 0;
+.box .ellipse {
+    background-color: #1077f780;
+}
+
+.box-2{ 
+    bottom: 0;
     right: 0;
-    pointer-events: none; 
 }
 
 .box-2 .ellipse {
-    position: absolute; 
-    width: 100%; 
-    height: 100%; 
     background-color: #e9929780;
-    border-radius: 219.5px/217px;
-    filter: blur(200px);
-    pointer-events: none; 
-    animation: fadeInAndOut 10s linear infinite;
     opacity: 0;
     animation-delay: 4s;
 }
 
-@keyframes fadeInAndOut {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-}
-
 .theme-nav {
     display: flex;
-    flex-direction: row;
-    width: 26%;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
     background-color: #0D0D0D;
-    color: #fff;
+    color: var(--main-white);
     position: fixed;
     opacity: 0.6;
     transition: transform 0.3s ease;
     top: 90%;
-    left: 37.5%;
+    left: 40%;
     border-radius: 50px;
+    padding: 2.5px 2.5vw;
 }
 
 .theme-nav:hover {
@@ -664,14 +652,18 @@ footer p {
     opacity: 1;
 }
 
+.theme-list {
+    margin-left: -40px;
+    word-spacing: 20px;
+}
+
 .theme-options {
     display: inline-block;
-    padding: 0 25px 0 23px;
 }
 
 .theme-text {
     text-decoration: none;
-    color: #fff;
+    color: var(--main-white);
     font-weight: bold;
     transition: font-size 0.3s ease;
 }
