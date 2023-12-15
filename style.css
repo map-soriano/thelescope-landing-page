@@ -3,6 +3,24 @@
     src: url(font/DMSans-VariableFont_opsz\,wght.ttf) format('truetype');
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInAndOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}
+
 :root {
     --main-bg: #131313;
     --main-white: #fff;
@@ -25,15 +43,6 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 h3 {
@@ -628,15 +637,6 @@ footer p {
     background-color: #e9929780;
     opacity: 0;
     animation-delay: 4s;
-}
-
-@keyframes fadeInAndOut {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
 }
 
 .theme-nav {
