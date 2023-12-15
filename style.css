@@ -5,6 +5,7 @@
 
 :root {
     --main-bg: #131313;
+    --main-white: #fff;
     --main-gradient: linear-gradient(90deg, #f29393, #044afe);
 }
 
@@ -17,7 +18,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: var(--main-bg);
-    color: #fff; 
+    color: var(--main-white); 
     font-family: 'DM Sans', sans-serif;
     animation: fadeIn 2s ease-in-out;
     user-select: none;
@@ -75,7 +76,7 @@ nav {
     width: fit-content;
     border-radius: 30px;
     background-color: #0D0D0D;
-    color: #fff;
+    color: var(--main-white);
     padding: 5px 2.5vw;
     position: fixed;
     z-index: 1;
@@ -97,7 +98,7 @@ nav:hover {
 
 .nav-text {
     text-decoration: none;
-    color: #fff;
+    color: var(--main-white);
     font-weight: bold;
     transition: font-size 0.3s ease;
 }
@@ -133,7 +134,7 @@ nav:hover {
     position: fixed;
     top: 28%;
     left: 6%;
-    border: #fff solid 2px;
+    border: var(--main-white) solid 2px;
     border-radius: 20%;
     transition: transform 0.3s ease;
     padding: 20px;
@@ -150,7 +151,7 @@ nav:hover {
 #sidebar {
     border-radius: 20px;
     background-color: #0D0D0D;
-    color: #fff;
+    color: var(--main-white);
     position: fixed;
     top: 25%;
     left: 5%;
@@ -225,7 +226,7 @@ nav:hover {
 
 #lets-start-button {
     background: var(--main-gradient);
-    color: #fff;
+    color: var(--main-white);
     width: 200px;
     border: none;
     border-radius: 10px;
@@ -242,9 +243,9 @@ nav:hover {
 
 #inquire-button {
     background-color: var(--main-bg);
-    color: #fff;
+    color: var(--main-white);
     width: 200px;
-    border: #fff solid 1px;
+    border: var(--main-white) solid 1px;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
@@ -409,7 +410,7 @@ footer {
     align-items: center;
     width: 100%;
     background-color: var(--main-bg);
-    color: #fff;
+    color: var(--main-white);
 }
 
 footer p {
@@ -418,7 +419,7 @@ footer p {
 }
 
 .separator {
-    border-bottom: #fff solid 1px;
+    border-bottom: var(--main-white) solid 1px;
     width: 80%;
     height: 0.5px;
 }
@@ -643,7 +644,7 @@ footer p {
     flex-direction: row;
     width: 26%;
     background-color: #0D0D0D;
-    color: #fff;
+    color: var(--main-white);
     position: fixed;
     opacity: 0.6;
     transition: transform 0.3s ease;
@@ -666,7 +667,7 @@ footer p {
 
 .theme-text {
     text-decoration: none;
-    color: #fff;
+    color: var(--main-white);
     font-weight: bold;
     transition: font-size 0.3s ease;
 }
