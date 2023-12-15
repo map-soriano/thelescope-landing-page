@@ -4,6 +4,7 @@
 }
 
 :root {
+    --main-bg: #131313;
     --main-gradient: linear-gradient(90deg, #f29393, #044afe);
 }
 
@@ -15,7 +16,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-color: #131313;
+    background-color: var(--main-bg);
     color: #fff; 
     font-family: 'DM Sans', sans-serif;
     animation: fadeIn 2s ease-in-out;
@@ -240,7 +241,7 @@ nav:hover {
 }
 
 #inquire-button {
-    background-color: #131313;
+    background-color: var(--main-bg);
     color: #fff;
     width: 200px;
     border: #fff solid 1px;
@@ -407,7 +408,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    background-color: #131313;
+    background-color: var(--main-bg);
     color: #fff;
 }
 
