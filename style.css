@@ -596,9 +596,12 @@ footer p {
     width: 439px;
     height: 434px;
     position: fixed; 
+    pointer-events: none; 
+}
+
+.box {
     top: 0;
     left: 0;
-    pointer-events: none; 
 }
 
 .box .ellipse {
@@ -613,7 +616,8 @@ footer p {
 }
 
 .box-2{ 
-    margin-top: 500px;
+    bottom: 0;
+    right: 0;
 }
 
 .box-2 .ellipse {
