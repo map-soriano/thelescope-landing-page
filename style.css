@@ -34,7 +34,7 @@ html {
 
 body {
     padding: 0 10%;
-    margin: 0;
+    margin: 20px 0;
     background-color: var(--main-bg);
     color: var(--main-white); 
     font-family: 'DM Sans', sans-serif;
