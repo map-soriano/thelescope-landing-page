@@ -161,6 +161,7 @@ nav:hover {
 #sidebar {
     border-radius: 20px;
     background-color: #0D0D0D;
+    text-align: left;
     color: var(--main-white);
     position: fixed;
     top: 25%;
