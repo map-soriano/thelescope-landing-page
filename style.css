@@ -391,6 +391,7 @@ nav:hover {
     flex-direction: row;
     justify-content: center;
     list-style: none;
+    text-align: left;
 }
 
 #contact li {
