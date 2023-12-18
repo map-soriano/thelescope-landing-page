@@ -24,6 +24,8 @@
 :root {
     --main-bg: #131313;
     --main-white: #fff;
+    --main-blue: #7584CB;
+    --main-pink: #F29393;
     --main-gradient: linear-gradient(90deg, #f29393, #044afe);
 }
 
@@ -159,6 +161,7 @@ nav:hover {
 #sidebar {
     border-radius: 20px;
     background-color: #0D0D0D;
+    text-align: left;
     color: var(--main-white);
     position: fixed;
     top: 25%;
@@ -208,11 +211,11 @@ nav:hover {
 }
 
 .blue-text:hover {
-    color: #7584CB;
+    color: var(--main-blue);
 }
 
 .pink-text:hover {
-    color: #F29393;
+    color: var(--main-pink);
 }
 
 #home h2 {
@@ -268,7 +271,7 @@ nav:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px 0px rgba(127,127,127,0.5);
     transition: all 0.3s ease;
-    background-color: #7584CB;
+    background-color: var(--main-blue);
     border: none;
 }
 
@@ -388,6 +391,7 @@ nav:hover {
     flex-direction: row;
     justify-content: center;
     list-style: none;
+    text-align: left;
 }
 
 #contact li {

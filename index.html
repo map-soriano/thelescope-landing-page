@@ -56,7 +56,7 @@
                     <span class="blue-text">e</span>
                     <span class="pink-text">s</span>
                     <span class="pink-text">c</span>
-                    <span class="pink-text">o</span>
+                    <span class="pink-text ooster" onclick="osterEgg()">o</span>
                     <span class="pink-text">p</span>
                     <span class="pink-text">e</span>
                 </h1>
@@ -162,8 +162,8 @@
         <footer>
                 <a href="#home"><img src="img/logo-white.png" alt="Thelescope Logo" id="header-logo"></a>
                 <p>© 2023 Thelescope. All rights reserved.</p>
-                <p>Privacy Policy</p>
-                <p>Terms of Service</p>
+                <p onclick="underConstruction()">Privacy Policy</p>
+                <p onclick="underConstruction()">Terms of Service</p>
         </footer>
         <script>
             document.addEventListener('contextmenu', (e) => {
@@ -177,6 +177,18 @@
             name.addEventListener('mouseout', () => {
                 name.innerHTML = 'Sarip';
             });
+
+            const underConstruction = () => {
+                alert('This page is under construction.');
+            }
+
+            const osterEgg = () => {
+                const egg = document.getElementsByClassName('blue-text');
+                const egg2 = document.getElementsByClassName('pink-text');
+                for (let i = 0; i < egg.length; i++) egg[i].innerHTML = 'o';
+                for (let j = 0; j < egg2.length; j++) egg2[j].innerHTML = 'o';
+                alert('You found the ooster egg!');
+            }
         </script>
     </body>
 </html>
