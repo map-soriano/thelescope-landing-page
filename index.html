@@ -162,8 +162,8 @@
         <footer>
                 <a href="#home"><img src="img/logo-white.png" alt="Thelescope Logo" id="header-logo"></a>
                 <p>© 2023 Thelescope. All rights reserved.</p>
-                <p>Privacy Policy</p>
-                <p>Terms of Service</p>
+                <p onclick="underConstruction()">Privacy Policy</p>
+                <p onclick="underConstruction()">Terms of Service</p>
         </footer>
         <script>
             document.addEventListener('contextmenu', (e) => {
@@ -177,6 +177,10 @@
             name.addEventListener('mouseout', () => {
                 name.innerHTML = 'Sarip';
             });
+
+            const underConstruction = () => {
+                alert('This page is under construction.');
+            }
         </script>
     </body>
 </html>
