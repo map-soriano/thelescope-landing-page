@@ -88,15 +88,19 @@
 
             <hr class="separator">
             <footer>
-                    <img src="img/logo-white.png" alt="Thelescope Logo" id="header-logo">
-                    <p>© 2023 Thelescope. All rights reserved.</p>
-                    <p>Privacy Policy</p>
-                    <p>Terms of Service</p>
+                <a href="/index.html#home"><img src="img/logo-white.png" alt="Thelescope Logo" id="header-logo"></a>
+                <p>© 2023 Thelescope. All rights reserved.</p>
+                <p onclick="underConstruction()">Privacy Policy</p>
+                <p onclick="underConstruction()">Terms of Service</p>
             </footer>
             <script>
                 document.addEventListener('contextmenu', function(e) {
                     e.preventDefault();
                 });
+
+                const underConstruction = () => {
+                alert('This page is under construction.');
+             }
             </script>
     </body>
 </html>
