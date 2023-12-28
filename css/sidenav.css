@@ -1,0 +1,47 @@
+#sidenav {
+    position: fixed;
+    top: 28%;
+    left: 6%;
+    border: var(--main-white) solid 2px;
+    border-radius: 20%;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    opacity: 1;
+    transition: opacity 5s ease;
+}
+
+#sidenav:hover {
+    transform: scale(1.1);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#sidebar {
+    border-radius: 20px;
+    background-color: #0D0D0D;
+    text-align: left;
+    color: var(--main-white);
+    position: fixed;
+    top: 25%;
+    left: 5%;
+    z-index: 1;
+    opacity: 0.0;
+    transition: all 0.3s ease;
+}
+
+#sidebar:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar li {
+    margin: 20px;
+}
