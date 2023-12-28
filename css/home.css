@@ -1,0 +1,86 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15% 10% 30% 10%;
+}
+
+#home h1 {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+#home h1 span {
+    margin: 0 -10px;
+    transition: font-size 1s ease;
+}
+
+#home h1 span:hover {
+    font-size: 120px;
+    transition: font-size 1s ease;
+}
+
+.blue-text:hover {
+    color: var(--main-blue);
+}
+
+.pink-text:hover {
+    color: var(--main-pink);
+}
+
+#home h2 {
+    color: #504E5A; 
+    font-size: 25px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 0;
+}
+
+#home div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#lets-start-button {
+    background: var(--main-gradient);
+    color: var(--main-white);
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#inquire-button {
+    background-color: var(--main-bg);
+    color: var(--main-white);
+    width: 200px;
+    border: var(--main-white) solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#home button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgba(127,127,127,0.5);
+    transition: all 0.3s ease;
+    background-color: var(--main-blue);
+    border: none;
+}
