@@ -2,6 +2,7 @@
 @import url(nav.css);
 @import url(sidenav.css);
 @import url(services.css);
+@import url(contact.css);
 
 @font-face {
     font-family: 'DM Sans';
@@ -144,45 +145,6 @@ header {
     text-align: left;
     margin-top: 0;
     margin-bottom: 0;
-}
-
-#contact {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 10% 30% 10%;
-}
-
-#contact p {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-#contact ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    text-align: left;
-}
-
-#contact li {
-    display: flex;
-    flex-direction: row;
-    width: 400px;
-    justify-content: left;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 30px;
-}
-
-#contact img {
-    max-height: 50px;
-    width: 50px;
-    margin-right: 20px;
 }
 
 footer {
