@@ -2,21 +2,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15% 10% 30% 10%;
+    padding: 64px 5% 24% 5%;
+    box-sizing: border-box;
 }
 
 #home h1 {
-    font-size: 100px;
+    font-size: 2.5rem;
     margin-bottom: 10px;
+    word-break: break-word;
 }
 
 #home h1 span {
-    margin: 0 -10px;
+    margin: 0 -4px;
     transition: font-size 1s ease;
 }
 
 #home h1 span:hover {
-    font-size: 120px;
+    font-size: 3rem;
     transition: font-size 1s ease;
 }
 
@@ -30,51 +32,52 @@
 
 #home h2 {
     color: #504E5A; 
-    font-size: 25px;
-    padding-left: 20%;
-    padding-right: 20%;
+    font-size: 1.1rem;
+    padding-left: 0;
+    padding-right: 0;
     margin-top: 0;
 }
 
 #home div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    gap: 12px;
 }
 
 #lets-start-button {
     background: var(--main-gradient);
     color: var(--main-white);
-    width: 200px;
+    width: 100%;
+    max-width: 320px;
     border: none;
     border-radius: 10px;
     padding: 10px;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 auto;
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: block;
 }
 
 #inquire-button {
     background-color: var(--main-bg);
     color: var(--main-white);
-    width: 200px;
+    width: 100%;
+    max-width: 320px;
     border: var(--main-white) solid 1px;
     border-radius: 10px;
     padding: 10px;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 auto;
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: block;
 }
 
 #home button:hover {
@@ -83,4 +86,39 @@
     transition: all 0.3s ease;
     background-color: var(--main-blue);
     border: none;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 700px) {
+    #home {
+        padding: 15% 10% 30% 10%;
+    }
+    #home h1 {
+        font-size: 100px;
+    }
+    #home h1 span {
+        margin: 0 -10px;
+    }
+    #home h1 span:hover {
+        font-size: 120px;
+    }
+    #home h2 {
+        font-size: 25px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    #home div {
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+    #lets-start-button,
+    #inquire-button {
+        width: 200px;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline-block;
+    }
 }

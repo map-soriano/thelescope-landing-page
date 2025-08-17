@@ -39,14 +39,18 @@
     --main-gradient: linear-gradient(90deg, #f29393, #044afe);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
 body {
-    padding: 0 10%;
-    margin: 20px 0;
+    padding: 0 4%;
+    margin: 10px 0;
     background-color: var(--main-bg);
     color: var(--main-white); 
     font-family: 'DM Sans', sans-serif;
@@ -56,10 +60,11 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    box-sizing: border-box;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 1.3rem;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
@@ -67,32 +72,58 @@ h3 {
 
 h4 {
     color: #9E88B8;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 30px;
+    padding-bottom: 18px;
 }
 
 .section-p {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 500;
     margin-top: 0;
 }
 
 .separator {
     border-bottom: var(--main-white) solid 1px;
-    width: 80%;
+    width: 90%;
     height: 0.5px;
 }
 
 .separator-short {
     border-bottom: #9E88B8 solid 1px;
-    width: 15%;
+    width: 30%;
     height: 0.5px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 700px) {
+    body {
+        padding: 0 10%;
+        margin: 20px 0;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .section-p {
+        font-size: 20px;
+    }
+    .separator {
+        width: 80%;
+    }
+    .separator-short {
+        width: 15%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }
 
 .text-gradient {

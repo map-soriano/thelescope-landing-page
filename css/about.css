@@ -1,19 +1,21 @@
 @import url(index.css);
 
 #about {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10% 30% 10%;
+    padding: 24px 5% 24px 5%;
+    box-sizing: border-box;
 }
 
 #about-mission-vision {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-top: 50px;
+    align-items: stretch;
+    gap: 24px;
+    padding-top: 24px;
 }
 
 .about-mission-vision-format {
@@ -21,9 +23,12 @@
     border-image: var(--main-gradient);
     border-image-slice: 1;
     border-radius: 10px;
-    margin: auto 30px;
-    padding: 50px 30px;
+    margin: 0 auto;
+    padding: 32px 16px;
     transition: all 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
 }
 
 .about-mission-vision-format:hover {
@@ -34,10 +39,13 @@
 
 .about-mission-vision-format img {
     margin-right: 10px;
+    max-width: 48px;
+    height: auto;
+    vertical-align: middle;
 }
 
 .about-mission-vision-format h3 {
-    font-size: 30px;
+    font-size: 1.5rem;
     text-align: left;
     font-weight: 500;
     margin-top: 10px;
@@ -45,9 +53,33 @@
 }
 
 .about-mission-vision-format p {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 500;
     text-align: left;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+    #about {
+        padding: 0 10% 30% 10%;
+    }
+    #about-mission-vision {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        padding-top: 50px;
+    }
+    .about-mission-vision-format {
+        margin: auto 30px;
+        padding: 50px 30px;
+        max-width: 400px;
+    }
+    .about-mission-vision-format h3 {
+        font-size: 30px;
+    }
+    .about-mission-vision-format p {
+        font-size: 20px;
+    }
 }

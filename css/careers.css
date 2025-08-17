@@ -1,34 +1,40 @@
 @import url(index.css);
 
 #careers {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 80px 10% 0 10%;
+    padding: 64px 5% 0 5%;
+    box-sizing: border-box;
 }
 
 #careers ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: stretch;
     list-style: none;
+    gap: 20px;
+    padding: 0;
 }
 
 #careers li {
-    display: block;
-    flex-direction: row;
-    justify-content: center;
-    height: 500px;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 320px;
+    width: 100%;
+    max-width: 350px;
     border: transparent solid 1px;
     border-image: var(--main-gradient);
     border-image-slice: 1;
-    font-size: 40px;
+    font-size: 1.3rem;
     font-weight: bold;
-    margin:30px;
-    padding: 30px;
+    margin: 0 auto;
+    padding: 18px;
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
 #careers li:hover {
@@ -39,7 +45,7 @@
 }
 
 #careers p {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 500;
     font-style: normal;
 }
@@ -49,9 +55,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10% 10% 10%;
+    padding: 0 5% 10% 5%;
     font-style: italic;
-    line-height: 2.0;
+    line-height: 1.7;
+    box-sizing: border-box;
 } 
 
 #careers-invite-text h3{
@@ -59,7 +66,10 @@
 }
 
 #careers-invite-text button {
-    margin-top: 50px;
+    margin-top: 32px;
+    width: 100%;
+    max-width: 250px;
+    font-size: 1rem;
 }
 
 #careers-invite-text button:hover {
@@ -67,4 +77,45 @@
     transition: transform 0.3s ease;
     background: var(--main-gradient);
     border: none;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 700px) {
+    #careers {
+        padding: 100px 10% 0 10%;
+    }
+    #careers ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+    #careers li {
+        /* Remove fixed height and overflow so content can expand */
+        width: 300px;
+        font-size: 40px;
+        margin: 30px;
+        padding: 30px;
+        min-height: 320px;
+        white-space: normal;
+        word-break: break-word;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        box-sizing: border-box;
+    }
+    #careers p {
+        font-size: 20px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        margin: 0;
+    }
+    #careers-invite-text {
+        padding: 0 10% 10% 10%;
+        line-height: 2.0;
+    }
+    #careers-invite-text button {
+        max-width: 300px;
+        font-size: 1.1rem;
+    }
 }

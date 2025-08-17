@@ -1,13 +1,15 @@
 #sidenav {
     position: fixed;
-    top: 28%;
-    left: 6%;
+    top: 8%;
+    left: 2%;
     border: var(--main-white) solid 2px;
     border-radius: 20%;
     transition: transform 0.3s ease;
-    padding: 20px;
+    padding: 10px;
     opacity: 1;
     transition: opacity 5s ease;
+    z-index: 20;
+    background: #0D0D0D;
 }
 
 #sidenav:hover {
@@ -17,16 +19,20 @@
 }
 
 #sidebar {
-    border-radius: 20px;
+    border-radius: 16px;
     background-color: #0D0D0D;
     text-align: left;
     color: var(--main-white);
     position: fixed;
-    top: 25%;
-    left: 5%;
-    z-index: 1;
+    top: 7%;
+    left: 2%;
+    z-index: 21;
     opacity: 0.0;
     transition: all 0.3s ease;
+    min-width: 120px;
+    max-width: 70vw;
+    font-size: 0.95rem;
+    padding: 18px 12px;
 }
 
 #sidebar:hover {
@@ -43,5 +49,25 @@
 }
 
 #sidebar li {
-    margin: 20px;
+    margin: 12px 0;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 700px) {
+    #sidenav {
+        top: 28%;
+        left: 6%;
+        padding: 20px;
+    }
+    #sidebar {
+        top: 25%;
+        left: 5%;
+        border-radius: 20px;
+        min-width: 180px;
+        max-width: 300px;
+        font-size: 1rem;
+    }
+    #sidebar li {
+        margin: 20px;
+    }
 }

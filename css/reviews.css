@@ -1,34 +1,70 @@
 @import url(index.css);
 
 #reviews {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 35px 10% 0 10%;
+    padding: 64px 5% 0 5%;
+    box-sizing: border-box;
 }
 
 #reviews ul {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     list-style: none;
+    gap: 28px;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+#reviews ul > div {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+    align-items: center;
 }
 
 #reviews li {
-    display: block;
-    flex-direction: row;
-    justify-content: center;
-    height: 200px;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 160px;
+    width: 94vw;
+    max-width: 350px;
     border: transparent solid 1px;
     border-image: var(--main-gradient);
     border-image-slice: 1;
-    font-size: 40px;
+    font-size: 1.1rem;
     font-weight: bold;
-    margin:30px;
-    padding: 30px;
+    margin: 0 auto;
+    padding: 18px 12px;
     transition: all 0.3s ease;
+    overflow: hidden;
+    word-break: break-word;
+    background: #181818;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+}
+
+/* Flex row for rating and star */
+#reviews li > img,
+#reviews li > span.rating-row {
+    display: inline-flex;
+    align-items: center;
+}
+
+#reviews li .rating-row {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: inherit;
+    font-weight: inherit;
+    margin-bottom: 8px;
 }
 
 #reviews li:hover {
@@ -39,16 +75,31 @@
 }
 
 #reviews p {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 500;
     font-style: italic;
+    margin: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+
+}
+
+#reviews li p:last-of-type {
+    align-self: flex-end;
+    text-align: right;
+    width: 100%;
+    font-style: normal;
+    margin-top: 12px;
+    opacity: 0.8;
 }
 
 #reviews img {
-    height: 32px;
-    width: 32px;
-    margin-top: 10px;
-    margin-left: 10px;
+    height: 1.1rem;
+    width: 1.1rem;
+    margin-left: 4px;
+    margin-top: 0;
+    vertical-align: middle;
 }
 
 #reviews-invite-text {
@@ -56,9 +107,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10% 10% 10%;
+    padding: 0 5% 10% 5%;
     font-style: italic;
-    line-height: 2.0;
+    line-height: 1.7;
+    box-sizing: border-box;
 } 
 
 #reviews-invite-text h3{
@@ -66,7 +118,10 @@
 }
 
 #reviews-invite-text button {
-    margin-top: 50px;
+    margin-top: 32px;
+    width: 100%;
+    max-width: 250px;
+    font-size: 1rem;
 }
 
 #reviews-invite-text button:hover {
@@ -74,4 +129,51 @@
     transition: transform 0.3s ease;
     background: var(--main-gradient);
     border: none;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 700px) {
+    #reviews {
+        padding: 80px 10% 0 10%;
+    }
+    #reviews ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 36px 28px;
+        max-width: 1100px;
+        margin: 0 auto;
+        justify-items: center;
+        align-items: start;
+    }
+    #reviews ul > div {
+        display: contents;
+    }
+    #reviews li {
+        min-height: 220px;
+        width: 100%;
+        max-width: 320px;
+        font-size: 1.2rem;
+        padding: 24px 18px;
+        margin: 0;
+    }
+    #reviews .rating-row {
+        font-size: 1.2rem;
+        gap: 3px;
+        margin-bottom: 12px;
+    }
+    #reviews li p:last-of-type {
+        margin-top: 18px;
+    }
+    #reviews p {
+        font-size: 20px;
+    }
+
+    #reviews-invite-text {
+        padding: 0 10% 10% 10%;
+        line-height: 2.0;
+    }
+    #reviews-invite-text button {
+        max-width: 300px;
+        font-size: 1.1rem;
+    }
 }
